@@ -6,15 +6,14 @@ function agregarAmigo() {
 
     let nombreAmigo = document.getElementById('amigo').value.trim();
 
-    // Verifica que el input no esté vacío
     if (nombreAmigo === "") {
         alert("Ingresar un nombre válido");
-        return; // Detiene la ejecución si el nombre está vacío
+        return; 
     }
 
-    amigos.push(nombreAmigo); // Agregar al array
-    document.getElementById('amigo').value = ''; // Limpiar el input
-    mostrarListaAmigos(); // Mostrar la lista actualizada
+    amigos.push(nombreAmigo);
+    document.getElementById('amigo').value = ''; 
+    mostrarListaAmigos(); 
 }
 
 // Función para mostrar la lista amigos
